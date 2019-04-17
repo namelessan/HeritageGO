@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Description for SEO, introduce the page in the search engine interface -->
+  <meta name="description" content="Héritage GO is the community for heritage lovers">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Setup viewport for responsive window -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <!-- BOOTSTRAP CDN  -->
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+  />
+
+  <!-- favicon for various platform -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+
+  <title>Héritage GO is the community for heritage lovers.</title>
+</head>
+
+<body>
+  <!-- BLURRED HEADER -->
+  <div class="header" id="blur-header">
+    <div id="main-content-blurred" class="blurred">
+    </div>
+  </div>
+  <!-- END OF BLURRED HEADER -->
+
+  <!-- HEADER -->
+  <header class="header__flex-box">
+    <div class="header__flex-box__flex-left">
+    </div>
+
+    <!-- FLEX BOX MID -->
+    <div class="header__flex-box__flex-mid">
+      <img class="header__flex-box__flex-mid__logo" src='./media/logo.png' />
+
+      <div class="header__flex-box__flex-mid__area-section">
+        <div style="text-align: center;">
+          <strong class="primary_area_name">Ho Chi Minh city</strong></br>
+          <span class="secondary_area_name">Vietnam</span>
+        </div>
+        <i class="far fa-compass compass-spin compass-align-resize"></i>
+
+        <!-- INVISIBLE LOGIN BUTTON -->
+        <button
+          type="button"
+          class="header__flex-box__flex-right__login_button_invi"
+          data-toggle="modal"
+          data-target="#LoginModal">
+          Log In
+        </button>
+        <!-- END OF INVISIBLE LOGIN BUTTON -->
+      </div>
+    </div>
+    <!-- END OF FLEX-BOX FLEX-MID -->
+
+    <div class="header__flex-box__flex-right">
+      <button
+        type="button"
+        class="header__flex-box__flex-right__login_button"
+        data-toggle="modal"
+        data-target="#LoginModal">
+        Log In
+      </button>
+    </div>
+  </header>
+  <!-- END OF HEADER -->
+  <!-- ============================================================================================================================== -->
+  <!-- SECTION AREA -->
+  <div id="main-content">
+    <section class="section" id="sample_section" hidden="true">
+      <aside class="section__aside-left"></aside>
+
+      <article class="post">
+        <!-- POST TITLE -->
+        <div class="post__title">
+          <img class="post__title__avatar" src="./media/na.png" />
+          <div class="post__title__information">
+            <div class="post__title__information__caption">
+              <span class="post__title__information__caption__text">Caption of the photo</span>
+
+              <!-- DROP DOWN -->
+              <div class="dropdown__menu">
+                <i id="triggerDropdown" onclick="" class="fas fa-language fa-lg post__title__information__translate-icon"></i>
+
+                <div id="myDropdown" class="dropdown-content" style="display: none;">
+                  <!-- <p class="dropdown-language">lang1</p>
+                  <p class="dropdown-language">lang2</p>
+                  <p class="dropdown-language">lang3</p> -->
+                </div>
+              </div>
+              <!-- END OF DROPDOWN -->
+            </div>
+
+            <div class="post__title__information__location">
+              <i class="fas fa-map-marker-alt"></i><span id="location" style="margin-left: 5px;">Location</span>
+              <i class="far fa-clock" style="margin-left: 20px;"></i><span id="date" style="margin-left: 5px;">Date</span>
+            </div>
+          </div>
+        </div>
+        <!-- END OF POST TITLE -->
+
+        <div class="post__image">
+          <img src="" />
+        </div>
+
+        <!-- POST INTERACT -->
+        <div class="post__interact">
+          <div class="post__interact__user-react">
+            <i class="fas fa-heart fa-lg"></i><strong style="margin-left: 5px;">0</strong>
+            <i class="fas fa-comment fa-lg" style="margin-left: 30px;"></i></i><strong style="margin-left: 5px;">0</strong>
+            <i class="fas fa-camera fa-lg" style="margin-left: 30px;"></i><strong style="margin-left: 5px;">0</strong>
+          </div>
+          <i class="fas fa-bookmark fa-lg" style="margin-right: 1rem; margin-bottom: 1rem;"></i>
+        </div>
+        <!-- END OF POST INTERACT -->
+
+        <!-- POST COMMENT -->
+        <div class="post__comment">
+          <div class="input-wrapper post__comment__input">
+            <input type="text" placeholder=" Write a comment">
+          </div>
+          <i class="fab fa-telegram-plane" style="margin-right: 30px; color: rgba(0, 0, 0, 0.3);"></i>
+        </div>
+        <!-- END OF POST COMMENT -->
+      </article>
+
+      <aside class="section__aside-right"></aside>
+    </section>
+  </div>
+  <!-- END OF SECTION AREA -->
+
+  <!-- MODAL FOR LOGIN BUTTON -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="login-form" action="" method="post">
+            <div class="input-wrapper floating-label">
+              <input type="text" name="email"id="email" required>
+              <label for="email">Email address:</label>
+              <i class="fas fa-key" id="key-icon"></i>
+            </div>
+            <div class="input-wrapper floating-label">
+              <input type="password" name="password" id="password" required>
+              <label for="password">Password:</label>
+              <i style="cursor: pointer;" class="fas fa-lock" id="lock-icon"></i>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OF MODAL FOR LOGIN BUTTON -->
+
+  <!-- JAVA SCRIPT SECTION -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous">
+  </script>
+  <script src="js/heritagego-service.1.0.0.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous">
+  </script>
+
+  <script src="js/main.js"></script>
+  <script src="js/toggle-password.js"></script>
+  <script src='js/language_dict.js'></script>
+  <script src="js/waypoint19.js"></script>
+  <!-- END OF JAVA SCRIPT SECTION -->
+</body>
+
+</html>
